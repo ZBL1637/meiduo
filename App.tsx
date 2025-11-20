@@ -679,7 +679,7 @@ const ProductionPage = ({
                       <div>
                           明星: {plan.starIds.length > 0 ? plan.starIds.map(id => MOCK_STARS.find(s => s.id === id)?.name).join(', ') : '无'}
                       </div>
-                      <div>时间: {plan.starStartDate} -> {plan.postEndDate}</div>
+                      <div>时间: {plan.starStartDate}{' → '}{plan.postEndDate}</div>
                    </div>
                    <div className="text-lg font-mono font-bold text-indigo-600 mt-3 text-right">
                       ¥ {plan.cost.toFixed(2)} 万
